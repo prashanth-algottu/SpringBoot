@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<form action="#" th:action="@{/save}" th:object="${employee}" method="post">
+			<label>Roll No</label>
+			<input type="text"  th:field="*{roll}"  /><br>
+			
+			<label>Name</label>
+			<input type="text" th:field="*{name}"  /><br>
+			
+			<label>Salary</label>
+			<input type="text"  th:field="*{salary}"  /><br>
+			
+			<label>Comapany</label>
+			<input type="text"  th:field="*{company}" /><br>
+			
+			<button type="submit">Save</button>
+		</form>
+</body>
+</html>
